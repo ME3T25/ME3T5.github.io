@@ -1,1 +1,206 @@
-# ME3T5.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name · Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0;
+    scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f0f10;
+      color: #eaeaea;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 8vw;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 15rem);
+      font-family: 'Jersey 25', sans-serif;
+      font-weight: 700;
+    }
+
+    header p {
+      max-width: 520px;
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      color: #b5b5b5;
+    }
+
+    nav {
+      position: fixed;
+      top: 30px;
+      right: 40px;
+      display: flex;
+      gap: 1.5rem;
+      font-size: 1rem;
+      z-index: 10;
+    }
+
+    #background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('dr15.jpg') no-repeat center center/cover;
+        filter: brightness(0.3);
+        z-index: -1;
+       
+        }
+
+    nav a { opacity: 0.7; }
+    nav a:hover { opacity: 1; }
+
+    section {
+      padding: 120px 8vw;
+    }
+
+    section h2 {
+      font-size: 4rem;
+      font-family: 'Jersey 25', sans-serif;
+      margin-bottom: 2rem;
+    }
+
+    .about p {
+      max-width: 640px;
+      color: #c9c9c9;
+        font-size: 1.1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #161618;
+      border-radius: 16px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      background: #1d1d20;
+    }
+
+    .card h3 { margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    font-family: 'Jersey 25', sans-serif; }
+    .card p { color: #a8a8a8; font-size: 1.1rem; }
+
+    footer {
+      padding: 60px 8vw;
+      border-top: 1px solid #222;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .links a { margin-right: 1rem; }
+
+    @media (max-width: 600px) {
+      nav { right: 20px; top: 20px; }
+      header { padding-top: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <a href="dr15.jpg" id="background"></a>
+    <h1>Meet</h1>
+    <p>
+      Turning ideas into code — web, apps, or whatever challenges arise
+    </p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>
+      I’m a student developer who enjoys exploring different areas of programming, from building web interfaces to working on software and problem-solving projects. I like understanding how things work, writing clean and simple code, and slowly improving through hands-on projects. I’m still learning, experimenting, and building — one project at a time.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Programming</h3>
+        <p>JavaScript, Python, C/C++, HTML, CSS</p>
+      </div>
+      <div class="card">
+        <h3>Web & Software</h3>
+        <p>Frontend development, basic backend concepts, APIs, databases</p>
+      </div>
+      <div class="card">
+        <h3>Tools & Workflow</h3>
+        <p>Git & GitHub, Linux basics, VS Code, REST APIs</p>
+      </div>
+      <div class="card">
+        <h3>Problem Solving</h3>
+        <p>Data structures & algorithms (basics), debugging, hackathon prototyping</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Selected Work</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Team Management System</h3>
+        <p>Developed a software application to manage teams, projects, and role assignments efficiently.</p>
+      </div>
+      <!-- <div class="card">
+        <h3>Project Two</h3>
+        <p>Another project highlighting design, code, or impact.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>A concise explanation with a focus on outcomes.</p>
+      </div> -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Want to collaborate or just say hi?
+      <br />
+      Reach me at <strong>sutharmeet984@gmail.com</strong>
+    </p>
+  </section>
+
+  <footer>
+    <div>© 2026 Meet</div>
+    <div class="links">
+      <a href="https://github.com/ME3T25">GitHub</a>
+      <a href="https://www.linkedin.com/in/meet-suthar-ce">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
